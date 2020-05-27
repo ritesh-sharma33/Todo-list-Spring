@@ -13,6 +13,8 @@
     <div class="container">
         <!-- modelAttribute is used instead of the depricated commandName -->
         <form:form method="post" modelAttribute="todo">
+            <!--The below hidden field is created for populating id of the todo -->
+            <form:hidden path="id"></form:hidden>
             <fieldset class="form-group">
                 <form:label path="desc">Description</form:label>
                 <form:input type="text" path="desc" class="form-control" required="required" />
